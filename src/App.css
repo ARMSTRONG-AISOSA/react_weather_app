@@ -4,10 +4,16 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  padding-bottom: 20px;
 }
 
 .weatherForm {
   margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .cityInput {
@@ -108,3 +114,75 @@ p {
 
 
 /* ================= Responsiveness ================= */
+
+@media (max-width: 680px) {
+  .weatherForm {
+    margin: 20px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .weatherForm {
+    margin: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .cityInput {
+    padding: 8px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    margin: 8px;
+    width: 280px;
+  }
+  
+  button[type="submit"] {
+    padding: 8px 16px;
+    font-size: 1.7rem;
+    border-radius: 5px;
+  }
+  
+  .card {
+    margin-top: 20px;
+    padding: 40px;
+    min-width: 280px;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    margin-top: 0;
+  }
+  
+  p {
+    font-size: 1.3rem;
+    margin: 5px 0;
+  }
+  
+  .cityDisplay,
+  .tempDisplay {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .humidityDisplay {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .descDisplay {
+    font-size: 1.6rem;
+  }
+  
+  .weatherEmoji {
+    font-size: 6.5rem;
+    line-height: 6rem;
+  }
+  
+  .errorDisplay {
+    font-size: 2rem;
+  }
+}
