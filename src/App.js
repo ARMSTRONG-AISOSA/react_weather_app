@@ -64,7 +64,7 @@ function App() {
       setWeather({
         name: data.name,
         temp: data.main.temp.toFixed(1), //rounds temp to one decimal place
-        humidity: data.main.temp,
+        humidity: data.main.humidity,
         description: data.weather[0].description,
         weatherId: data.weather[0].id,
         weatherEmoji: getWeatherEmoji(data.weather[0].id),
